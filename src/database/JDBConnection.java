@@ -20,6 +20,7 @@ public class JDBConnection {
 		String username = "root";
 		String password = "2116";
 		
+		
 	Connection con=DriverManager.getConnection(url, username, password);
 	System.out.println("Connection successful");
 	Statement s=con.createStatement();
@@ -32,6 +33,7 @@ public class JDBConnection {
 		
 		driver.findElement(By.id("userEmail")).sendKeys(rs.getString("name"));
 		System.out.println(rs.getString("age"));
+		System.out.println("Git");
 	}
 	}
 
